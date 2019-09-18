@@ -8,6 +8,7 @@ import Default from "./components/Default";
 import { Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import Modal from "./components/Modal";
+import Footer from "./components/Footer";
 
 export default class App extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class App extends Component {
           <Route component={Default} />
         </Switch>
         <Modal />
+        <Footer />
       </React.Fragment>
     );
   }

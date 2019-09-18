@@ -47,7 +47,7 @@ export default class Product extends Component {
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
             <h5 className="text-blue font-italic mb-0">
-              <span className="mr-1">$</span>
+              <span className="mr-1">₹</span>
               {price}
             </h5>
           </div>
@@ -70,6 +70,7 @@ const ProductWrapper = styled.div`
   .card {
     border-color: transparent;
     transition: all 1s linear;
+    margin: 1.2rem;
   }
   .card-footer {
     background: transparent;
@@ -114,6 +115,6 @@ const ProductWrapper = styled.div`
     cursor: pointer;
   }
   .image-size {
-    height: 10rem;
+    height: 12rem;
   }
 `;

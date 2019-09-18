@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CartTotal = ({ value }) => {
+const CartTotal = ({ value, history }) => {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
 
   return (
@@ -20,17 +20,17 @@ const CartTotal = ({ value }) => {
             </Link>
             <h5>
               <span className="text-title">
-                subTotal:<strong>$ {cartSubTotal}</strong>
+                subTotal:<strong>₹ {cartSubTotal}</strong>
               </span>
             </h5>
             <h5>
               <span className="text-title">
-                tax:<strong>$ {cartTax}</strong>
+                Gst:<strong>₹ {cartTax}</strong>
               </span>
             </h5>
             <h5>
               <span className="text-title">
-                total:<strong>$ {cartTotal}</strong>
+                total:<strong>₹ {cartTotal}</strong>
               </span>
             </h5>
           </div>
